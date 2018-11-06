@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char nome[21];
+	char nome2[21];
+	int tam, i, j=0;
+	printf("digite o seu nome: ");
+	fgets(nome,21,stdin);
+	strcpy(nome2,nome);
+	tam = (strlen(nome)-1);
+	j=tam;
+	for (i=0;i<tam+1;i++){
+	nome[i]=nome2[j];
+	j--;
+}
+	printf("%s",nome);
+}
